@@ -1,4 +1,5 @@
 <nav id="sidebar-icon-links">
+  {% include custom-icon-links.html %}
   {% if site.hydeout.repo %}
     <a id="github-link"
        class="icon" title="Github Project" aria-label="Github Project"
@@ -12,23 +13,11 @@
     </a>
   {% endif %}
 
-  <a id="github-link"
-      class="icon" title="Github" aria-label="Github"
-      href="https://github.com/andresvalle">
-    {% include svg/github.svg %}
-  </a>
-
-  <a id="email-link"
-  class="icon" title="Send Email" aria-label="Email"
-  href="mailto:andresvalledev@gmail.com">
-{% include svg/email.svg %}
-</a>
-
   <!-- <a id="subscribe-link"
      class="icon" title="Subscribe" aria-label="Subscribe"
      href="{{ site.feed.path | default: 'feed.xml' | relative_url }}">
     {% include svg/feed.svg %}
-  </a> -->
+  </a>  -->
 
   {% comment %}
     Check if we have tag or search pages page active before linking to it.
@@ -61,5 +50,4 @@
     </a>
   {% endif %}
 
-  {% include custom-icon-links.html %}
 </nav>
